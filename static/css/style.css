@@ -72,6 +72,10 @@ body {
     color: var(--primary-color);
 }
 
+.brand-color {
+    background-color: var(--tertiary-color);
+}
+
 
 /* --- 0.4 Effects --- */
 
@@ -287,3 +291,5 @@ footer {
     height: 300px;
     weight: 300px;
 }
+
+

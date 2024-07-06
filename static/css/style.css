@@ -128,7 +128,7 @@ section {
 
 .container {
     max-width: 1200px;
-    margin: 0px auto;
+    margin: auto;
 }
 
 /* --- 1.2 Elements --- */
@@ -212,11 +212,6 @@ body model-viewer {
     width: inherit;
 }
 
-/* Allows to change the size of the 3D model, by changing it's div parent size */
-/* div  model-viewer {
-    height: inherit;
-    weight: inherit;
-} */
 
 /* Hotspots */
 
@@ -339,6 +334,10 @@ footer {
 } */
 
 #hero-banner .container {
+    width: 100%;
+}
+
+#hero-banner {
     height: 100vh;
     display: flex;
     flex-direction: column;

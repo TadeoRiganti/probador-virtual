@@ -196,6 +196,13 @@ p {
     font-size: 21px;
 }
 
+/* --- 1.2.4 Model viewer --- */
+
+/* Allows to change the size of the 3D model, by changing it's div parent size */
+div  model-viewer {
+    height: inherit;
+    weight: inherit;
+}
 
 
 /* === 2. SECONDARY LAYOUT STRUCTURE === */
@@ -273,4 +280,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+/* Controls the size of the 3D model */
+#hero-banner div > model-viewer {
+    height: 300px;
+    weight: 300px;
 }

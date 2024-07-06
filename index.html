@@ -35,13 +35,24 @@
     </header>
 
     <main>
-        <section id="hero-banner" class="tonal"> 
+        <section id="hero-banner" class="dark-theme"> 
             <div class="container">
                 <div class="description">
                     <h1>Hola mundo</h1>
                 </div>
                 <div class="content">
-                    <!-- model viewer component -->
+                    <model-viewer
+                    alt="3D model of 'Suzanne', the Blender's mascot"
+                    src="static\assets\suzanne.glb"
+                    ar
+
+                    camera-controls
+                    auto-rotate
+                    disable-pan
+                    disable-zoom
+
+                    shadow-intensity="1"
+                    ></model-viewer>
                 </div>
             </div>   
             

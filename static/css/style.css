@@ -72,6 +72,10 @@ body {
     color: var(--primary-color);
 }
 
+.brand-color {
+    background-color: var(--tertiary-color);
+}
+
 
 /* --- 0.4 Effects --- */
 
@@ -124,7 +128,7 @@ section {
 
 .container {
     max-width: 1200px;
-    margin: 0px auto;
+    margin: auto;
 }
 
 /* --- 1.2 Elements --- */
@@ -195,6 +199,68 @@ p {
 .logo a {
     font-size: 21px;
 }
+
+/* --- 1.2.4 Model viewer --- */
+
+:not(:defined) > * {
+    display: none;
+}
+
+/* Size of the container */
+body model-viewer {
+    height: inherit;
+    width: inherit;
+}
+
+
+/* Hotspots */
+
+/* Hide hotspot */
+model-viewer .hotspot{
+    width: 0px;
+    height: 0px;
+    border: none;
+  }
+
+
+/* Annotations */
+
+model-viewer button {
+    --min-hotspot-opacity: 0;
+}
+
+/* Change max-with with clamp like font treatment */
+model-viewer .annotation {
+    border-radius:10px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 250px;
+    text-align: left;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: translate3d(-50%, -50%, 90);
+}
+
+/* Top head annotation */
+model-viewer .hotspot[slot=hotspot-4] {
+    /* Meaning:            X      Y */
+    transform: translate(-125px, -50px);
+}
+
+/* Right ear annotation */
+model-viewer .hotspot[slot=hotspot-7] {
+    /* Meaning:            X      Y */
+    transform: translate(-125px, 50px);
+}
+
+
 
 
 
@@ -268,9 +334,28 @@ footer {
 } */
 
 #hero-banner .container {
+    width: 100%;
+}
+
+#hero-banner {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin:0px;
 }
+
+#hero-banner h1 {
+    font-size: clamp(5rem, 10vw, 8rem);
+    line-height: 5rem;
+}
+
+/* Controls the size of the 3D model */
+#hero-banner div > model-viewer {
+    height: 400px;
+    weight: auto;
+    margin: auto;
+}
+
+

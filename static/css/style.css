@@ -263,15 +263,10 @@ footer {
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
 } */
 
-/* #hero-banner .container {
+#hero-banner .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-} */
-
-#hero-banner {
-    display: flex;
-    justify-content: center;
 }

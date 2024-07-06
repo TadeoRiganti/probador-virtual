@@ -1,0 +1,276 @@
+/* CSS DIRECTORY
+    0. = GLOBAL SETTINGS (resets, scrollbars, etc.)
+	1. = PRIMARY LAYOUT STRUCTURE (body, primary divs)
+	2. = SECONDARY LAYOUT STRUCTURE (header, footer, sidebar)
+	3. = TERTIARY LAYOUT STRUCTURE (page regions, floats)
+*/
+
+
+
+/* === 0.0 GLOBAL SETTINGS === */
+
+/* --- 0.1 COLOR PALETTES --- */
+
+
+
+:root {
+    /* Primary */
+    --primary-color: white;
+    --secondary-color: #252525;
+    --tertiary-color: #00A650;
+
+    /* Secondary */
+    --error-color: #ba1a1a;
+
+    --color-neutral-99: GhostWhite;
+    --color-neutral-95: hsl(216, 8%, 95%);
+    --color-neutral-80: LightGrey;
+    --color-neutral-60: DarkGrey;
+    --color-neutral-50: hsl(0, 0%, 50%);
+    --color-neutral-40: DimGrey;
+    --color-neutral-30: hsl(0, 0%, 30%);
+}
+
+
+/* --- 0.2 Reset broweser's default style ---  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* ---0.3 PATCHES --- Temporary */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+
+
+/* --- 0.3 Themes --- */
+
+.light-theme {
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
+}
+
+.tonal {
+    background-color: var(--color-neutral-95);
+    color: var(--secondary-color);
+}
+
+.dark-theme {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+/* --- 0.4 Effects --- */
+
+/* Transitions */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+/* Elevations */
+
+.elevation-1 {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.elevation-2 {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.elevation-3 {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* --- 0.4 Family fonts --- */
+
+/* Display Font */
+
+h1 {
+    font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Text font */
+
+:not(h1) {
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* === 1.0 PRIMARY LAYOUT STRUCTURE === */
+
+/* --- 1.1 Containers --- */
+
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+/* --- 1.2 Elements --- */
+
+/* --- 1.2.1 Components --- */
+
+a{
+    text-decoration: none;
+    color: #252525;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: clamp(3rem, 5vw, 6rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.125rem, 1.5vw, 1.75rem);
+}
+
+p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+/* --- 1.2.2 Icons --- */
+
+/* # Small */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+/* Big */
+.iconos-grandes {
+    color: var(--tertiary-color);
+    font-size: 36px; 
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 36
+  }
+
+  /* --- 1.2.3 Logos --- */
+
+  .logo {
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 40px;
+    color: var(--error-color);
+}
+
+.logo a {
+    font-size: 21px;
+}
+
+
+
+/* === 2. SECONDARY LAYOUT STRUCTURE === */
+
+/* --- 2.1 HEADER --- */
+
+header {
+    color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0px 50px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 16px;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--tertiary-color-active);
+    border-color: var(--tertiary-color-active);
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* --- 2.2 MAIN --- */
+
+/* --- 2.3 FOOTER --- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+
+/* === 3. TERTIARY LAYOUT STRUCTURE === */
+
+
+/* --- 3.1 SECTIONS --- */
+
+/* # Hero-banner */
+
+/* #hero-banner {
+    background-image: url(/);
+    background-size: cover;
+    background-position: Center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+} */
+
+#hero-banner .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

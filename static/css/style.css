@@ -403,7 +403,7 @@ footer {
 }
 
 #try-it img {
-    width: clamp(12rem, 20vw, 250px)
+    width: clamp(12rem, 20vw, 40vh);
 }
 
 
@@ -412,4 +412,11 @@ footer {
 .collection {
     text-align: center;
     gap: 24px;
+}
+
+/* Free space for thumb scroll in movil version */
+@media (max-width: 720px) {
+    .container model-viewer {
+        width: 75vw;
+    }
 }

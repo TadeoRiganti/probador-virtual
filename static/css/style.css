@@ -122,8 +122,14 @@ h1 {
 .columns {
     display: grid;
     grid-auto-flow: column;
+    gap: 1em;
 }
 
+@media (max-width: 360px) {
+    .columns {
+        grid-auto-flow: row;
+    }
+}
 
 /* === 1.0 PRIMARY LAYOUT STRUCTURE === */
 
@@ -373,7 +379,22 @@ footer {
     margin: auto;
 }
 
-/* Ejemplos */
+
+/* Virtual Try-ons */
+
+
+#try-it .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#try-it img {
+    width: 100%;
+}
+
+
+/* Collection examples */
 
 .collection {
     text-align: center;

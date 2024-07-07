@@ -117,6 +117,13 @@ h1 {
 }
 
 
+/* LAYOUT */
+
+.columns {
+    display: grid;
+    grid-auto-flow: column;
+}
+
 
 /* === 1.0 PRIMARY LAYOUT STRUCTURE === */
 
@@ -314,9 +321,9 @@ nav {
 
 /* --- 2.2 MAIN --- */
 
-/* Example sections */
 
-section .example
+
+
 
 /* --- 2.3 FOOTER --- */
 
@@ -366,4 +373,9 @@ footer {
     margin: auto;
 }
 
+/* Ejemplos */
 
+.example {
+    text-align: center;
+    gap: 24px;
+}

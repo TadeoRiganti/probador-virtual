@@ -2,6 +2,10 @@
 
 In this project I'll be experimenting with the web component 'model-viewer' *(by Google)*, first to test and showcase a variety of examples and features, and later on *(once I satisfied my curiosity)* I'll rename the project as a landing page for a __'Virtual Try-on' service__ for ecommerce in the furniture sector. 
 
+###  Potencial use-case scenarios
+
+- [Soferia](https://soferia.es/)
+
 
 ## Model-viewer 
 

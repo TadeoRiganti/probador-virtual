@@ -125,7 +125,7 @@ h1 {
     gap: 1em;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 720px) {
     .columns {
         grid-auto-flow: row;
     }
@@ -142,6 +142,10 @@ section {
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+:is(.description, .content) {
+    gap: 16px;
 }
 
 /* --- 1.2 Elements --- */
@@ -382,6 +386,9 @@ footer {
 
 /* Virtual Try-ons */
 
+#try-it .container {
+    width: clamp(16rem, 90vw, 70rem);
+}
 
 #try-it .description{
     display: flex;
@@ -389,8 +396,14 @@ footer {
     justify-content: center;
 }
 
+#try-it .content {
+    width: min-content;
+    margin: 0 auto;
+    justify-content: center;
+}
+
 #try-it img {
-    width: 100%;
+    width: clamp(12rem, 20vw, 250px)
 }
 
 

@@ -206,12 +206,16 @@ p {
     display: none;
 }
 
-/* Size of the container */
+/* Extends the width of the container */
 body model-viewer {
-    height: inherit;
     width: inherit;
 }
 
+div > model-viewer {
+    height: 400px;
+    weight: auto;
+    margin: auto;
+}
 
 /* Hotspots */
 
@@ -309,6 +313,10 @@ nav {
 }
 
 /* --- 2.2 MAIN --- */
+
+/* Example sections */
+
+section .example
 
 /* --- 2.3 FOOTER --- */
 

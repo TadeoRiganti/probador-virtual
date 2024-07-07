@@ -117,6 +117,13 @@ h1 {
 }
 
 
+/* LAYOUT */
+
+.columns {
+    display: grid;
+    grid-auto-flow: column;
+}
+
 
 /* === 1.0 PRIMARY LAYOUT STRUCTURE === */
 
@@ -206,12 +213,16 @@ p {
     display: none;
 }
 
-/* Size of the container */
+/* Extends the width of the container */
 body model-viewer {
-    height: inherit;
     width: inherit;
 }
 
+div > model-viewer {
+    height: 400px;
+    weight: auto;
+    margin: auto;
+}
 
 /* Hotspots */
 
@@ -310,6 +321,10 @@ nav {
 
 /* --- 2.2 MAIN --- */
 
+
+
+
+
 /* --- 2.3 FOOTER --- */
 
 footer {
@@ -358,4 +373,9 @@ footer {
     margin: auto;
 }
 
+/* Ejemplos */
 
+.example {
+    text-align: center;
+    gap: 24px;
+}

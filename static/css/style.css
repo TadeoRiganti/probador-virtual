@@ -214,7 +214,7 @@ p {
 }
 
 /* Extends the width of the container */
-body model-viewer {
+.extend model-viewer {
     width: inherit;
 }
 

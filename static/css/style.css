@@ -413,10 +413,22 @@ footer {
     text-align: center;
 }
 
-.collection .description {
-    display: grid;
-    align-content: center;
+.collection .product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+@media (max-width: 720px) {
+    .collection .product {
+        flex-direction: column;
+    }
+}
+
+.collection .product.reverse {
+    flex-direction: row-reverse;
+}
+
 
 .collection model-viewer {
     width: 50vw;

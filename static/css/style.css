@@ -409,13 +409,12 @@ footer {
 
 /* Collection examples */
 
-.collection .description {
+.collection div {
     text-align: center;
-    margin-bottom: 16px;
+    margin: 24px auto;
 }
 
-.collection .content div > h3 {
-    text-align: center;
+.collection h3{
     margin: 24px 0 16px 0;
 }
 

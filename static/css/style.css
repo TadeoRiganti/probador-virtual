@@ -148,6 +148,10 @@ section {
     gap: 16px;
 }
 
+:is(.description, .content) :is(h2, h3, h4){
+    margin-bottom: 16px;
+}
+
 .card {
     background-color: var(--primary-color);
     border-radius: 20px;
@@ -249,6 +253,30 @@ div > model-viewer {
     height: 400px;
     weight: auto;
     margin: auto;
+}
+
+@media (max-width: 940px) {
+    div > model-viewer {
+        height: 400px;
+        weight: auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    div > model-viewer {
+        height: 360px;
+        weight: auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    div > model-viewer {
+        height: 250px;
+        weight: auto;
+        margin: auto;
+    }
 }
 
 /* Hotspots */

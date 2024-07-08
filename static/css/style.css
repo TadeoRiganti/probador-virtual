@@ -403,23 +403,23 @@ footer {
 }
 
 #try-it img {
-    width: clamp(1rem, 20vw, 200px);
+    width: clamp(10rem, 20vw, 250px);
 }
 
 
 /* Collection examples */
 
-.collection div {
+.collection h2 {
     text-align: center;
-    margin: 24px auto;
 }
 
-.collection h3{
-    margin: 24px 0 16px 0;
+.collection .description {
+    display: grid;
+    align-content: center;
 }
 
-div model-viewer {
-    background-color: #252525;
+.collection model-viewer {
+    width: 50vw;
 }
 
 /* Free space for thumb scroll in movil version */

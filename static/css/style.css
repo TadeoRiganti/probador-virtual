@@ -403,15 +403,24 @@ footer {
 }
 
 #try-it img {
-    width: clamp(12rem, 20vw, 40vh);
+    width: clamp(1rem, 20vw, 200px);
 }
 
 
 /* Collection examples */
 
-.collection {
+.collection .description {
     text-align: center;
-    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.collection .content div > h3 {
+    text-align: center;
+    margin: 24px 0 16px 0;
+}
+
+div model-viewer {
+    background-color: #252525;
 }
 
 /* Free space for thumb scroll in movil version */

@@ -153,8 +153,16 @@ section {
     border-radius: 20px;
     padding: 36px;
     margin: 24px;
-
 }
+
+@media (min-width: 940px) {}
+    .card {
+        background-color: var(--primary-color);
+        border-radius: 20px;
+        padding: 36px;
+        margin: 24px 0;
+
+    }
 
 /* --- 1.2 Elements --- */
 
@@ -421,13 +429,19 @@ footer {
 
 /* Collection examples */
 
-section.collection .container {
-    width: 75vw;
-    justify-content: center;
+
+
+@media (min-width: 940px) {
+    section.collection .container {
+        width: 75vw;
+        justify-content: center;
+    }
 }
 
-section.collection .container .product model-viewer {
+@media (min-width: 940px) {
+    section.collection .container .product model-viewer {
     width: clamp(360px, 33vw , 33vw);
+    }
 }
 
 .collection h2 {

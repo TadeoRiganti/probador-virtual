@@ -148,14 +148,11 @@ section {
     gap: 16px;
 }
 
-:is(.description, .content) :is(h3,h4,h5) {
-    margin: 16px 0 8px;
-}
-
 .card {
-    background-color: var(--color-primary);
+    background-color: var(--primary-color);
     border-radius: 20px;
-    padding: 24px;
+    padding: 36px;
+    margin: 24px;
 
 }
 
@@ -435,6 +432,10 @@ section.collection .container .product model-viewer {
 
 .collection h2 {
     text-align: center;
+}
+
+.collection h3 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 .collection .product {

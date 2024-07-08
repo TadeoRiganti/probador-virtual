@@ -148,6 +148,10 @@ section {
     gap: 16px;
 }
 
+:is(.description, .content) :is(h3,h4,h5) {
+    margin: 16px 0 8px;
+}
+
 /* --- 1.2 Elements --- */
 
 /* --- 1.2.1 Components --- */
@@ -157,8 +161,9 @@ a{
     color: #252525;
 }
 
-li {
-    list-style: none;
+ul {
+    list-style:circle ;
+    list-style-position: inside
 }
 
 h1 {
@@ -313,8 +318,11 @@ nav {
     gap: 16px;
 }
 
+.nav-links li {
+    list-style: none;
+}
+
 .nav-links a {
-    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -409,26 +417,38 @@ footer {
 
 /* Collection examples */
 
+section.collection .container {
+    width: 75vw;
+    justify-content: center;
+}
+
+section.collection .container .product model-viewer {
+    width: clamp(360px, 33vw , 33vw);
+}
+
 .collection h2 {
     text-align: center;
 }
 
-.collection .product{
+.collection .product {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 16px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 940px) {
     .collection .product {
         flex-direction: column;
     }
 }
 
-.collection .product.reverse {
-    flex-direction: row-reverse;
+/* Reverse only works in desktop version */
+@media (min-width: 940px) {
+    .collection .product.reverse {
+        flex-direction: row-reverse;
+    }
 }
-
 
 .collection model-viewer {
     width: 50vw;

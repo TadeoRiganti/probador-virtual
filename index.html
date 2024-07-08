@@ -27,7 +27,7 @@
                 <span class="wordmark"><a href="index.html">Tadeo Riganti</a></span>
             </div>
             <!-- Nav links -->
-            <ul>
+            <ul class="nav-links">
                 <!-- About the proyect -->
                 <li><a href="index.html">Sobre el proyecto</a></li>
             </ul>
@@ -102,15 +102,59 @@
         </section>
         <section class="collection">
             <div class="container">
-                <div class="description">
-                    <h2>Coleccion Karlstand</h2>
+                <h2>Coleccion Karlstad</h2>
+                 <!-- Armchair -->
+                <div class="product reverse">
+                        <div class="description">
+                            <h3> Sillón</h3>
+                            <p>
+                                Con un diseño <strong>modular</strong> y <strong> estilo minimalista</strong>, se caracteriza por sus líneas simples, que lo vuelve ideal para adaptarse a diferentes espacios y estilos decorativos.
+                            </p>
+                            <br>
+                            <ul>
+                                <h4>Medidas</h4>
+                                <li>Ancho: 83 cm</li>
+                                <li>Profundidad: 85 cm</li>
+                                <li>Altura: 88 cm</li>
+                                <li>Altura del asiento: 46 cm</li>
+                            </ul>
+                        </div>
+                        <div class="content"> 
+                            <model-viewer
+                            alt="..."
+                            src="static\assets\sofa_1c.glb"
+                            ar
+                            camera-controls
+                            camera-orbit="360deg 80deg"
+                            max-camera-orbit="Infinity 98deg auto"
+                            min-camera-orbit="-Infinity 22.5deg auto"
+                            disable-pan
+                            disable-zoom
+                            shadow-intensity="1"
+                            tone-mapping="aces">
+                            </model-viewer>
+                        </div>
                 </div>
-                <div class="content">
-                    <div> <!-- Armchair -->
+                <!-- Couch 2 bodies -->
+                <div class="product">
+                    <div class="description">
                         <h3> Sillón</h3>
+                        <p>
+                            Con un diseño <strong>modular</strong> y <strong> estilo minimalista</strong>, se caracteriza por sus líneas simples, que lo vuelve ideal para adaptarse a diferentes espacios y estilos decorativos.
+                        </p>
+                        <br>
+                        <ul>
+                            <h4>Medidas</h4>
+                            <li>Ancho: 83 cm</li>
+                            <li>Profundidad: 85 cm</li>
+                            <li>Altura: 88 cm</li>
+                            <li>Altura del asiento: 46 cm</li>
+                        </ul>
+                    </div>
+                    <div class="content"> 
                         <model-viewer
                         alt="..."
-                        src="static\assets\sofa_1c.glb"
+                        src="static\assets\sofa_2c.glb"
                         ar
                         camera-controls
                         camera-orbit="360deg 80deg"
@@ -122,31 +166,31 @@
                         tone-mapping="aces">
                         </model-viewer>
                     </div>
-                    <div> <!-- Couch 2 bodies -->
-                        <h3> Sofá de 2 cuerpos</h3>
-                        <model-viewer
-                        alt="..."
-                        src="static\assets\sofa_2c.glb"
-                        ar
-                        camera-controls
-                        camera-orbit="360deg 80deg"
-                        max-camera-orbit="Infinity 96deg auto"
-                        min-camera-orbit="-Infinity 22.5deg auto"
-                        disable-pan
-                        disable-zoom
-                        shadow-intensity="1"
-                        tone-mapping="aces">
-                        </model-viewer>
+                </div>
+                <!-- Couch 3 bodies -->
+                <div class="product reverse">
+                    <div class="description">
+                        <h3> Sillón</h3>
+                        <p>
+                            Con un diseño <strong>modular</strong> y <strong> estilo minimalista</strong>, se caracteriza por sus líneas simples, que lo vuelve ideal para adaptarse a diferentes espacios y estilos decorativos.
+                        </p>
+                        <br>
+                        <ul>
+                            <h4>Medidas</h4>
+                            <li>Ancho: 83 cm</li>
+                            <li>Profundidad: 85 cm</li>
+                            <li>Altura: 88 cm</li>
+                            <li>Altura del asiento: 46 cm</li>
+                        </ul>
                     </div>
-                    <div> <!-- Couch 3 bodies -->
-                        <h3>Sofá de 3 cuerpos</h3>
+                    <div class="content"> 
                         <model-viewer
                         alt="..."
                         src="static\assets\sofa_3c.glb"
                         ar
                         camera-controls
                         camera-orbit="360deg 80deg"
-                        max-camera-orbit="Infinity 94deg auto"
+                        max-camera-orbit="Infinity 98deg auto"
                         min-camera-orbit="-Infinity 22.5deg auto"
                         disable-pan
                         disable-zoom
@@ -154,18 +198,6 @@
                         tone-mapping="aces">
                         </model-viewer>
                     </div>
-                    <!-- <model-viewer
-                    alt="..."
-                    src="/"
-                    ar
-                    camera-controls
-                    auto-rotate
-                    camera-orbit="360deg 80deg"
-                    disable-pan
-                    disable-zoom
-                    shadow-intensity="1"
-                    tone-mapping="aces">
-                    </model-viewer> -->
                 </div>
             </div>
         </section>    

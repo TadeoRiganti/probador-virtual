@@ -144,13 +144,13 @@ section {
     margin: auto;
 }
 
-:is(.description, .content) {
+
+.description  {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
-:is(.description, .content) :is(h2, h3, h4){
-    margin-bottom: 16px;
-}
 
 .card {
     background-color: var(--primary-color);
@@ -245,39 +245,22 @@ p {
 }
 
 /* Extends the width of the container */
-.extend model-viewer {
+
+model-viewer {
+    height: inherit;
     width: inherit;
 }
 
+
 div > model-viewer {
     height: 400px;
-    weight: auto;
-    margin: auto;
 }
 
-@media (max-width: 940px) {
-    div > model-viewer {
-        height: 400px;
-        weight: auto;
-        margin: auto;
-    }
-}
 
-@media (max-width: 720px) {
-    div > model-viewer {
-        height: 360px;
-        weight: auto;
-        margin: auto;
-    }
+div.wide > model-viewer {
+    height: 200px;
 }
-
-@media (max-width: 480px) {
-    div > model-viewer {
-        height: 250px;
-        weight: auto;
-        margin: auto;
-    }
-}
+/* El atributo 'camera-orbit="360deg 80deg 60%"', donde '60%' acerca la distancia entre la camara y el objeto. */
 
 /* Hotspots */
 

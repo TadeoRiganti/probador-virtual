@@ -25,14 +25,14 @@ For now I'll focus on something easy to locate and test, such as furniture's pro
     - I've to edit them and change the base color. Reduce the size and build the L and U shaped models.
     - Add a script to change information with the model selected. Althought for starters I can describe it in general ways, without referring to the body's count.
 
-#### 2. Sofa-bed 
+#### 2. Sofa-bed or "Relax" armchair 
 
 - __Features:__
     - Texture variants with buttons or a drop-down list _(For the color upholstery)_.
     - Rig animation _(Bed to Sofa)_.
 
 - __Design:__ 
-    - __Reference:__ Mechanism like [Thomas sofa by Divanlito](https://divanlito.com/product/605/thomas.html) more clean to animate or [KB](https://divanlito.com/p/378/kb.html) more mainstream design.
+    - __Reference:__ Mechanism like [Thomas sofa by Divanlito](https://divanlito.com/product/605/thomas.html) more clean to animate or [KB](https://divanlito.com/p/378/kb.html) more mainstream design. If I go for the "relax" armchair I could use a ready-made model (if I can find it) or build it basing it on [Relax by Living Factory](https://livingfactory.com.ar/producto/sillon-relax/) _(mainstream design and easy to model)_ or maybe [Scarlet by Divanlito](https://divanlito.com/product/329/scarlet.html) or [others](https://divanlito.com/category/46/Relax.html?page=1&view=small&p=hidden).
     - __Style:__ It has an industrial style and it's so mainstream that a lot of prospects have it on its own catalog.
 
 - __Challenges:__ I've alredy done the blueprint (for another project), so now I just have to finish the model and rig it.

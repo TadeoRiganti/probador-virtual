@@ -9,19 +9,35 @@ I'll design and develop a few examples featuring some cool properties of this te
 For now I'll focus on something easy to locate and test, such as furniture's products. Later I'll try with real state uses.
 ### Furniture
 
-#### 1. Sofa-bed 
+#### 1. Sofa configurator 
+
+- __Features:__
+    - Mesh variants with a drop-down list _(For the body count)_. Easy and simple.
+    <!-- - Mesh variants with a drop-down list _(For type of legs)_. 3D Configurator idea. -->
+    - Texture variants with buttons or a drop-down list _(for the upholstery)_.
+    - Optional: Layers visibility _(extras like pillows)_
+
+- __Design:__ 
+    - __Reference:__ Karlstad by IKEA in 3 options: 3, 2 an 1 body. Maybe I'll build and add an L and U shape. Need to attach the author (for the 3 first)
+    - __Style:__ Modular and minimalist, simple lineas 
+
+- __Challenges:__ 
+    - I've to edit them and change the base color. Reduce the size and build the L and U shaped models.
+    - Add a script to change information with the model selected. Althought for starters I can describe it in general ways, without referring to the body's count.
+
+#### 2. Sofa-bed 
 
 - __Features:__
     - Texture variants with buttons or a drop-down list _(For the color upholstery)_.
     - Rig animation _(Bed to Sofa)_.
 
 - __Design:__ 
-    - __Reference:__ The 3D model is alredy built, I can't remember the reference but I'll add it later. 
+    - __Reference:__ Mechanism like [Thomas sofa by Divanlito](https://divanlito.com/product/605/thomas.html) more clean to animate or [KB](https://divanlito.com/p/378/kb.html) more mainstream design.
     - __Style:__ It has an industrial style and it's so mainstream that a lot of prospects have it on its own catalog.
 
 - __Challenges:__ I've alredy done the blueprint (for another project), so now I just have to finish the model and rig it.
 
-#### 2. Rack TV 
+#### 3. Rack TV 
 
 - __Features:__
     - Texture variants.
@@ -33,7 +49,7 @@ For now I'll focus on something easy to locate and test, such as furniture's pro
 
 - __Challenges:__ I've alredy done the blueprint (for another project), so now I just have to finish the model and rig it.
 
-#### 3. Kitchen
+#### 4. Kitchen
 
 - __Features:__
     - Light effects _(post-process)_.

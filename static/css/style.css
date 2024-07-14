@@ -24,6 +24,7 @@
 
     --color-neutral-99: GhostWhite;
     --color-neutral-95: hsl(216, 8%, 95%);
+    --color-neutral-90: hwb(0 90% 17%);
     --color-neutral-80: LightGrey;
     --color-neutral-60: DarkGrey;
     --color-neutral-50: hsl(0, 0%, 50%);
@@ -159,16 +160,59 @@ section {
     margin: 24px;
 }
 
-@media (min-width: 940px) {}
+@media (min-width: 940px) {
     .card {
         background-color: var(--primary-color);
         border-radius: 20px;
         padding: 36px;
         margin: 24px 0;
-
     }
+}
 
+table {
+    margin: 30px 0px;
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+}
+
+table th,
+table td {
+    padding: 8px; 
+    text-align: left;
+}
+
+table th {
+    border-bottom: 2px solid var(--color-neutral-50);
+}
+
+table td {
+    border-bottom: 1px solid var(--color-neutral-90);
+}
+
+table td > img {
+    width: clamp(32px, 64px, 10vh);
+}
+
+
+/* Permitir que pueda ser usado desde movil */
+ @media (max-width: 720px) {
+    table {
+        margin: 0 auto;
+        display: table;
+    }
+} 
+
+table thead {}
+
+table tbody tr a {
+    font-weight: 700;
+    color :#00A650;
+    text-decoration: underline;
+}
 /* --- 1.2 Elements --- */
+
+
 
 /* --- 1.2.1 Components --- */
 

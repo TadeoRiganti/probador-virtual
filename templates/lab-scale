@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Model viewer component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/laboratory.css">
+    
+    <title>Laboratorio</title>
+</head>
+
+<body class="light-theme">
+
+    <header>
+        <nav>
+            <!-- Home -->
+            <div>
+                <span class="wordmark"><a href="..\index.html">Tadeo Riganti</a></span>
+            </div>
+            <!-- Nav links -->
+            <ul class="nav-links">
+                <!-- About the proyect -->
+                <li><a href="about.html">Sobre el proyecto</a></li>
+                <li><a href="#">Laboratorio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<main>
+    <section class="hero-banner">
+        <div class="container columns">
+            <div class="description">
+                <h1>Fidelidad de escala</h1> 
+                <h2>Testear si hay diferencias en la escala y buscar formas de ajustarlo</h2>
+                <p>
+                    Si bien esto depende en gran medida de la camara del celular, quiero saber cual seria la <strong>experiencia "low-end"</strong>, es decir en celulares de <strong>media-baja gama</strong>.
+                </p> 
+            </div> 
+            <div class="content">
+                <img #caca src="#" alt="">
+            </div>
+    </section>
+    <section class="tonal">
+        <div class="container columns card elevation-3">
+            <div class="description">
+                <h2>Comoda Padua 120B</h2>
+                <ul>
+                    <li><strong>Medidas</strong>; 120 x 35 x 90 cm.</li>
+                    <li><strong>Color</strong>; Atakama con puertas blancas</li>
+                    <li><strong>Peso</strong>; 70 kg vacio.</li>
+                </ul>
+                <h3>Memoria descriptiva:</h3>
+                <p>
+                    ¿Porque elijo este producto? Sencillamente porque lo tengo en mi habitacion. De esa manera puedo asegurarme de construir el modelo con el objeto de <strong>referencia real</strong> y al testear poder conseguir una <strong>muestra A/B</strong>.
+                </p>
+                <small><em>Al modelarlo con un nivel de precision elevada, no voy a usarlo con fines comerciales ni promocionales. Creditos del diseño a <a href="https://www.ciprianomuebles.com.ar/">Cipriano Muebles</a>.</em></small>
+            </div>
+            <div class="content">
+                <a href="https://www.ciprianomuebles.com.ar/productos/comoda-padua-120b/"></a>
+                <img src="..\static\img\lab-chifonier-padua-cipriano_muebles.jpg" alt="Comoda Padua 120B">
+            </div>
+        </div>
+    </section>
+    <section class="viewport dark-theme">
+        <div class="container center">
+            <div class="description">
+                <h2>Probador virtual</h2>
+                <small>Modelado en Sketchup. Texturas de baja resolucion. UV map sin coccion.</small>
+            </div>
+            <div class="content">
+                <model-viewer src="..\static\assets\chifonier_closed.glb" 
+                    ar ar-modes="webxr scene-viewer quick-look" 
+                    camera-controls tone-mapping="neutral" 
+                    poster= "..\static\img\chifonier_closed-poster.webp" 
+                    shadow-intensity="1">
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in your space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                        </div>
+                </model-viewer>
+            </div>       
+        </div>
+    </section>
+
+<section class="results">
+    
+</section>
+
+
+</main>
+
+<footer class="dark-theme">
+    <div class="container">
+        <p><small>@ 2024 Tadeo Riganti</small></p>
+    </div>
+</footer>
+    
+</body>
+</html>

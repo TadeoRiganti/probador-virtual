@@ -165,7 +165,7 @@ section {
         background-color: var(--primary-color);
         border-radius: 20px;
         padding: 36px;
-        margin: 24px 0;
+        margin: 24px auto;
     }
 }
 

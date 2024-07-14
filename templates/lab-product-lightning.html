@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Model viewer component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/laboratory.css">
+    
+    <title>Laboratorio</title>
+</head>
+
+<body class="light-theme">
+
+    <header>
+        <nav>
+            <!-- Home -->
+            <div>
+                <span class="wordmark"><a href="..\index.html">Tadeo Riganti</a></span>
+            </div>
+            <!-- Nav links -->
+            <ul class="nav-links">
+                <!-- About the proyect -->
+                <li><a href="about.html">Sobre el proyecto</a></li>
+                <li><a href="laboratory.html">Laboratorio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<main>
+    <section class="brand-color dark-theme">
+        <div class="container columns">
+            <div class="description">
+                <h1>Nombre del experimento</h1> 
+                <h2>Volanta de hasta 2 lineas</h2>
+                <p>
+                    Espacio para explicar en un "tweet" los para que del experimento, asi como su porque y como es que lo voy a testear.
+                </p> 
+            </div> 
+            <div class="content">
+                <img #caca src="#" alt="">
+            </div>
+    </section>
+    <section class="tonal">
+        <div class="container columns card elevation-3">
+            <div class="description">
+                <h2>Nombre del producto</h2>
+                <ul>
+                    <li><strong>Medidas</strong>; ??? x ??? x ??? cm.</li>
+                    <li><strong>Colores</strong>; Breve listado con los colores disponibles para visualizar.</li>
+                    <li><strong>Peso</strong>; ??? kg.</li>
+                </ul>
+                <h3>Memoria descriptiva:</h3>
+                <p>
+                    Espacio opcional para agregar algo relacionado al modelado del producto.</strong>.
+                </p>
+                <small><em>Linea opcional para mencionar creditos de autor, en caso de que el modelo o algun recurso lo requiera.</small>
+            </div>
+            <div class="content">
+                <a href="https://www.ciprianomuebles.com.ar/productos/comoda-padua-120b/"></a>
+                <img src="https://media.printables.com/media/prints/62917/images/656777_7712dcf1-d135-4c14-a219-822d9524b689/thumbs/cover/1200x630/jpg/2021-04-08-192636.jpg" alt="Foto del producto">
+            </div>
+        </div>
+    </section>
+    <section id="viewport" class="dark-theme">
+        <div class="container center">
+            <div class="description">
+                <h2>Probador virtual</h2>
+                <small>Agregar descripción tecnica breve sobre los datos del modelo; </small>
+            </div>
+            <div class="content">
+                <model-viewer
+                    alt="Modelo 3D de la cabeza de un chimpance"
+                    src="..\static\assets\suzanne.glb"
+                    ar
+                    camera-controls
+                    auto-rotate
+                    camera-orbit="360deg 80deg"
+                    disable-pan
+                    disable-zoom
+                    shadow-intensity="1"
+                    tone-mapping="aces">
+                </model-viewer>
+            </div>       
+        </div>
+    </section>
+
+<section id="results">
+    <div class="container columns">
+        <div class="description">
+            <h2>Resultados</h2>
+            <p>Espacio reservado para describir los resultados. Puede resolverse en varias secciones, agregando imagenes, videos, incrustraciones, etc. <br><br> La idea es documentar la conclusión final, mostrar resultados o desarrollar alguna que otra explicacion que sirva como recordatorio.  </p>
+        </div>
+        <div class="content">
+            <img src="https://http.cat/images/404.jpg" alt="Error 404">
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<footer class="dark-theme">
+    <div class="container">
+        <p><small>@ 2024 Tadeo Riganti</small></p>
+    </div>
+</footer>
+    
+</body>
+</html>

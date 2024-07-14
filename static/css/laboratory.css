@@ -1,0 +1,18 @@
+
+
+.columns .content img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+@media (max-width: 940px) {
+    .columns {
+        grid-auto-flow: row;
+    }
+}
+
+
+.center .description {
+    text-align: center;
+}

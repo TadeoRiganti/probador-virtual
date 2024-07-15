@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/laboratory.css">
     
-    <title>Laboratorio</title>
+    <title>Fidelidad de escala</title>
 </head>
 
 <body class="light-theme">
@@ -76,20 +76,18 @@
                 <small>Modelado en Sketchup. Texturas de baja resolucion. UV map sin coccion.</small>
             </div>
             <div class="content">
-                <model-viewer src="..\static\assets\chifonier_closed.glb" 
-                    ar ar-modes="webxr scene-viewer quick-look" 
-                    camera-controls tone-mapping="neutral" 
-                    poster= "..\static\img\chifonier_closed-poster.webp" 
-                    shadow-intensity="1">
-                        <div class="progress-bar hide" slot="progress-bar">
-                            <div class="update-bar"></div>
-                        </div>
-                        <button slot="ar-button" id="ar-button">
-                            View in your space
-                        </button>
-                        <div id="ar-prompt">
-                            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-                        </div>
+                <model-viewer
+                    alt="Modelo 3D de la cabeza de un chimpance"
+                    src="..\static\assets\chifonier_closed.glb"
+                    ar
+                    camera-controls
+                    camera-orbit="360deg 80deg 80%"
+                    max-camera-orbit="Infinity 94deg auto"
+                    min-camera-orbit="-Infinity 45deg auto"
+                    disable-pan
+                    disable-zoom
+                    shadow-intensity="1"
+                    tone-mapping="aces">
                 </model-viewer>
             </div>       
         </div>

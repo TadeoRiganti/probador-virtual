@@ -35,60 +35,89 @@
     </header>
     
 <main>
+
     <section class="brand-color dark-theme">
         <div class="container columns">
             <div class="description">
-                <h1>Nombre del experimento</h1> 
-                <h2>Volanta de hasta 2 lineas</h2>
+                <h1>Iluminación del producto</h1> 
+                <h2>Descubrir cual es la técnica que logra mejores resultados</h2>
                 <p>
-                    Espacio para explicar en un "tweet" los para que del experimento, asi como su porque y como es que lo voy a testear.
-                </p> 
+                    Debido a lo que se muestra en el visor no siempre se condice con el renderizado durante el filtro, este experimento sera iterado multiples veces. <br><br>
+                    Para documentarlo de manera ordenada, esta pagina se va a dividir en las siguientes secciones:
+                </p>
+                <ol>
+                    <li>Modelo de referencia</li>
+                    <li>Tecnicas de iluminación</li>
+                    <li>Experiencias</li>
+                </ol>
             </div> 
             <div class="content">
                 <img #caca src="#" alt="">
             </div>
     </section>
+
     <section class="tonal">
         <div class="container columns card elevation-3">
             <div class="description">
-                <h2>Nombre del producto</h2>
+                <h2>Comoda Padua 120B</h2>
                 <ul>
-                    <li><strong>Medidas</strong>; ??? x ??? x ??? cm.</li>
-                    <li><strong>Colores</strong>; Breve listado con los colores disponibles para visualizar.</li>
-                    <li><strong>Peso</strong>; ??? kg.</li>
+                    <li><strong>Medidas</strong>; 120 x 35 x 90 cm.</li>
+                    <li><strong>Color</strong>; Atakama con puertas blancas</li>
+                    <li><strong>Peso</strong>; 70 kg vacio.</li>
                 </ul>
                 <h3>Memoria descriptiva:</h3>
                 <p>
-                    Espacio opcional para agregar algo relacionado al modelado del producto.</strong>.
+                    ¿Porque elijo este producto? Sencillamente porque lo tengo en mi habitacion. De esa manera puedo asegurarme de construir el modelo con el objeto de <strong>referencia real</strong> y al testear poder conseguir una <strong>muestra A/B</strong>.
                 </p>
-                <small><em>Linea opcional para mencionar creditos de autor, en caso de que el modelo o algun recurso lo requiera.</small>
+                <small><em>Al modelarlo con un nivel de precision elevada, no voy a usarlo con fines comerciales ni promocionales. Creditos del diseño a <a href="https://www.ciprianomuebles.com.ar/">Cipriano Muebles</a>.</em></small>
             </div>
             <div class="content">
                 <a href="https://www.ciprianomuebles.com.ar/productos/comoda-padua-120b/"></a>
-                <img src="https://media.printables.com/media/prints/62917/images/656777_7712dcf1-d135-4c14-a219-822d9524b689/thumbs/cover/1200x630/jpg/2021-04-08-192636.jpg" alt="Foto del producto">
+                <img src="..\static\img\lab-chifonier-padua-cipriano_muebles.jpg" alt="Comoda Padua 120B">
             </div>
         </div>
     </section>
+
     <section id="viewport" class="dark-theme">
         <div class="container center">
             <div class="description">
                 <h2>Probador virtual</h2>
                 <small>Agregar descripción tecnica breve sobre los datos del modelo; </small>
             </div>
-            <div class="content">
+            <div class="content extend">
                 <model-viewer
                     alt="Modelo 3D de la cabeza de un chimpance"
-                    src="..\static\assets\suzanne.glb"
+                    src="..\static\assets\chifonier_closed.glb"
                     ar
                     camera-controls
-                    auto-rotate
-                    camera-orbit="360deg 80deg"
+                    camera-orbit="360deg 80deg 80%"
+                    max-camera-orbit="Infinity 94deg auto"
+                    min-camera-orbit="-Infinity 45deg auto"
                     disable-pan
                     disable-zoom
                     shadow-intensity="1"
                     tone-mapping="aces">
                 </model-viewer>
             </div>       
+        </div>
+    </section>
+
+    <section id="techniques">
+        <div class="container">
+                <div class="description">
+                    <h2>2. Técnicas</h2>
+                </div>
+                <div class="content columns">
+                    <div class="description">
+                        <h3>Set de iluminación</h3>
+                        <p>Usando el motor "Cycles", ilumine el modelo con varios focos tratando de suavizar las sombras, pero sin dejar de realzar la profundidad y darle un sentido de orientacion de uso (sombras parte trasera).</p>
+                    </div>
+                    <div class="content">
+                        <img src="..\static\img\settings-lights.png" alt="Captura de pantalla de la configuración utilizada.">
+                        <caption>Addon para Blender; "Light Studio"</caption>
+                    </div>
+                </div>
+                
         </div>
     </section>
 

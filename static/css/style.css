@@ -226,6 +226,10 @@ ul {
     list-style-position: inside
 }
 
+ol {
+    list-style-position: inside
+}
+
 h1 {
     font-size: clamp(3rem, 5vw, 6rem);
 }

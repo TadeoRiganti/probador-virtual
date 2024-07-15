@@ -107,11 +107,11 @@
     <section id="techniques">
         <div class="container">
                 <div class="description gutter">
-                    <h2>2. Técnicas</h2>
+                    <h2 class="center">2. Técnicas</h2>
                 </div>
-                <div class="content columns card elevation-1">
+                <div class="content columns card">
                     <div class="description">
-                        <h3>Iluminacion general</h3>
+                        <h3>Iluminacion general → Set</h3>
                         <p>Usando el motor "Cycles", ilumine el modelo con varios focos tratando de suavizar las sombras, pero sin dejar de realzar la profundidad y darle un sentido de orientacion de uso (sombras parte trasera).</p>
                     </div>
                     <div class="content">
@@ -119,7 +119,7 @@
                         <caption>Addon para Blender llamado <a href="https://leomoon.com/store/plugins/leomoon-lightstudio/">Leomoon Light Studio</a></caption>
                     </div>
                 </div>
-                <div class="content columns card elevation-1">
+                <div class="content columns card">
                     <div class="description">
                         <h3>Sombras de oclusión → World</h3>
                         <p>La configuración más simple que se puede hacer en Blender.</p>
@@ -128,7 +128,7 @@
                         <img src="..\static\img\settings-worldAO.png" alt="Captura de pantalla de la configuración utilizada.">
                     </div>
                 </div>
-                <div class="content columns card elevation-1">
+                <div class="content columns card">
                     <div class="description">
                         <h3>Sombras de oclusión → Render Pass</h3>
                         <p>Es una tecnica avamzada que se realiza desde la pestaña 'Composition'. <br> <br>
@@ -139,6 +139,40 @@
                         <img src="..\static\img\settings-compositionAO.png" alt="Captura de pantalla de la configuración utilizada.">
                     </div>
                 </div>
+                
+                
+        </div>
+    </section>
+
+    <section id="methods" class="tonal">
+        <div class="container">
+                <div class="description gutter">
+                    <h2 class="center">3. Metodos</h2>
+                </div>
+                <div class="content columns card elevation-2">
+                    <div class="description">
+                        <h3>Tecnicas</h3>
+                        <p>Selecciona una o mas tecnicas para ver como cambia el resultado:</p>
+                        <form action="">
+                            <fieldset>
+                                <legend>Iluminación general</legend>
+                                <input type="radio" name="" id="" disabled> Sol
+                                <input type="radio" name="" id=""> Iluminación de estudio
+                            </fieldset>
+                            <fieldset>
+                                <legend>Sombreado de oclusión</legend>
+                                <input type="checkbox" name="" id=""> World setting
+                                <input type="checkbox" name="" id=""> Render Pass
+                                <input type="checkbox" name="" id="" disabled> Material
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="content">
+                        <img src="..\static\img\ref-comoda-padua-view1__lights+worldAO+compositAO.png" alt="Captura de pantalla de la configuración utilizada.">
+                        <caption></caption>
+                    </div>
+                </div>
+
                 
                 
         </div>

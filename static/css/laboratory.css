@@ -1,4 +1,6 @@
-
+.center {
+    text-align: center;
+}
 
 .columns .content img {
     width: 100%;
@@ -13,6 +15,8 @@
 }
 
 
-.center .description {
-    text-align: center;
+.gutter {
+    margin-top: 24px;
 }
+
+

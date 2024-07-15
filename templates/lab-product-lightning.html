@@ -46,9 +46,9 @@
                     Para documentarlo de manera ordenada, esta pagina se va a dividir en las siguientes secciones:
                 </p>
                 <ol>
-                    <li>Modelo de referencia</li>
+                    <li>Objeto de prueba</li>
                     <li>Tecnicas de iluminación</li>
-                    <li>Experiencias</li>
+                    <li>Metodos</li>
                 </ol>
             </div> 
             <div class="content">
@@ -57,6 +57,7 @@
     </section>
 
     <section class="tonal">
+        <h2 class="center"> 1) OBJETO DE PRUEBA</h2>
         <div class="container columns card elevation-3">
             <div class="description">
                 <h2>Comoda Padua 120B</h2>
@@ -81,8 +82,9 @@
     <section id="viewport" class="dark-theme">
         <div class="container center">
             <div class="description">
-                <h2>Probador virtual</h2>
-                <small>Agregar descripción tecnica breve sobre los datos del modelo; </small>
+                <h2>Modelo 3D</h2>
+                <p>Instancia con algunas partes abiertas, para poder observar distintas profundidades</p>
+                <small>Modelado en Sketchup. Texturas 1k, sin cocinar. </small>
             </div>
             <div class="content extend">
                 <model-viewer
@@ -104,19 +106,40 @@
 
     <section id="techniques">
         <div class="container">
-                <div class="description">
+                <div class="description gutter">
                     <h2>2. Técnicas</h2>
                 </div>
-                <div class="content columns">
+                <div class="content columns card elevation-1">
                     <div class="description">
-                        <h3>Set de iluminación</h3>
+                        <h3>Iluminacion general</h3>
                         <p>Usando el motor "Cycles", ilumine el modelo con varios focos tratando de suavizar las sombras, pero sin dejar de realzar la profundidad y darle un sentido de orientacion de uso (sombras parte trasera).</p>
                     </div>
                     <div class="content">
                         <img src="..\static\img\settings-lights.png" alt="Captura de pantalla de la configuración utilizada.">
-                        <caption>Addon para Blender; "Light Studio"</caption>
+                        <caption>Addon para Blender llamado <a href="https://leomoon.com/store/plugins/leomoon-lightstudio/">Leomoon Light Studio</a></caption>
                     </div>
                 </div>
+                <div class="content columns card elevation-1">
+                    <div class="description">
+                        <h3>Sombras de oclusión → World</h3>
+                        <p>La configuración más simple que se puede hacer en Blender.</p>
+                    </div>
+                    <div class="content">
+                        <img src="..\static\img\settings-worldAO.png" alt="Captura de pantalla de la configuración utilizada.">
+                    </div>
+                </div>
+                <div class="content columns card elevation-1">
+                    <div class="description">
+                        <h3>Sombras de oclusión → Render Pass</h3>
+                        <p>Es una tecnica avamzada que se realiza desde la pestaña 'Composition'. <br> <br>
+                        Los modulos dentro del contenedor del medio (nombrado como 'compositionAO') le indican a Blender que, luego de renderizar la imagen (F12), haga una segunda pasada y la combine con la primera de manera que intensifique las sombras.  </p>
+                        <small><em>El modo [Multiplicación], como su propio nombre indica, multiplica los colores de la capa de combinación y los de las capas base para conseguir unos tonos más oscuros.</em></small>
+                    </div>
+                    <div class="content">
+                        <img src="..\static\img\settings-compositionAO.png" alt="Captura de pantalla de la configuración utilizada.">
+                    </div>
+                </div>
+                
                 
         </div>
     </section>

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+	padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+nav { 
+	width: 20%;
+    height: 100vh;
+	background-color: #111;
+    float: left;
+}
+.title{
+    background: linear-gradient(#000, #222);
+	font-size: 14px;
+	display: block;
+	padding: 10px 15px;
+	cursor: pointer;
+    transition: all .25s;
+	color: #FFF;
+}
+
+ul li{
+	background-color: #111;
+	height: 35px;
+	overflow: hidden;
+	transition: all .3s;
+	font-weight: bold;	
+}
+
+a{
+	font-size: 12px;
+	text-decoration: none;
+	display: block;
+	padding: 10px 25px;
+	transition: all .25s;
+	color: #FFF;
+}
+
+a:hover {
+	background-color: #333;
+    box-shadow: inset 5px 0px 0px 0px #f00;
+}
+
+.title:hover {
+	text-shadow: 0px 0px 10px #fff;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+#dashboard:checked + li, #tasks:checked + li, #profile:checked + li {
+	height: 140px;
+}
+
+i {
+	margin-right: 10px;
+}
+
+.main {
+    width: 80%;
+    padding: 10px;
+    float: right;
+}

@@ -18,12 +18,13 @@ This rules will be in the 'style.css' file */
   'opsz' 20
 }
 
+
 /* --------------------------------------- */
 
 
 
 nav { 
-	width: fit-content;
+	width: 20%;
     height: 100vh;
 	background-color: #111;
     float: left;
@@ -32,6 +33,7 @@ nav {
 nav .title {
 	font-size: 1.5em;
 	display: flex;
+	height: auto;
     align-items: center;
 	padding: 0.5em 1em; 
 	cursor: pointer;
@@ -61,7 +63,7 @@ nav a:hover {
 }
 
 nav .title:hover {
-	background-color: #333;
+	background-color: #00A650;
 }
 
 nav input[type="radio"] {
@@ -86,5 +88,7 @@ nav span {
 will hidde and appear overlapping the main content
 (with a dark shadow to obscure anything its behind*/
 main .main {
+    width: 80%;
+    padding: 10px;
     float: right;
 }

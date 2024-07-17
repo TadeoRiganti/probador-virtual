@@ -1,3 +1,6 @@
+/* JUST FOR TEST PURPOSES
+This rules will be in the 'style.css' file */
+
 * {
     margin: 0;
 	padding: 0;
@@ -15,7 +18,8 @@
   'opsz' 20
 }
 
-/* MATERIAL UI */
+/* --------------------------------------- */
+
 
 
 nav { 
@@ -78,8 +82,9 @@ nav span {
 
 /* MAIN */
 
+/* This will change in responsive as the sidebar
+will hidde and appear overlapping the main content
+(with a dark shadow to obscure anything its behind*/
 main .main {
-    width: 80%;
-    padding: 10px;
     float: right;
 }

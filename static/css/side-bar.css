@@ -24,10 +24,11 @@ This rules will be in the 'style.css' file */
 
 
 nav { 
-	width: 20%;
+	width: clamp(240px, 30%, 480px);
     height: 100vh;
 	background-color: #111;
     float: left;
+	overflow-y: auto;
 }
 
 nav .title {
@@ -41,10 +42,19 @@ nav .title {
 }
 
 
-nav ul li {
-	/* 'height' is acting as the line-heigth of the list 
-    As it is hardoced, maybe it'll break in the future*/
-	height: 3.5em; 
+nav li {
+	/* DEVELOPER NOTES:
+	'height' is acting as the line-heigth of the list:
+	- If height is low, labels will overlap.
+	- If heigth is too high li items will appear.
+	- I 'ill left it at 3.5em, because this way the label's icon
+	  won't be clipped by the background of the label. 
+	- If title is too long, it 'll be overlapped by the next
+	  label in line.. for this project in particular, titles 
+	  of each category will be very short.
+	So take in mind this limitation if you want to use this code
+	in future projects*/
+	height: 3.5em;
 	overflow: hidden;
 	font-weight: bold;	
 }
@@ -87,8 +97,9 @@ nav span {
 /* This will change in responsive as the sidebar
 will hidde and appear overlapping the main content
 (with a dark shadow to obscure anything its behind*/
-main .main {
-    width: 80%;
+
+main {
+    width: 70%;
     padding: 10px;
     float: right;
 }

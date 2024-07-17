@@ -13,22 +13,32 @@
             <!-- Panel for a category -->
             <ul> 
                 <!-- Accordion will open when input is 'checked' -->
-                <input type="radio" name="menu" id="documentation" checked>
+                <input type="radio" name="menu" id="category-1" checked>
                 <li>
-                    <!-- Reminder: In script appears as 'Dashbord'. ; Must adapt script!! -->
                     <label for="category-1" class="title">
-                        <!-- Category's symbol -->
-                         <!--REMINDER: '<span>' is not in the original snippet, original was <i> element ; Must adapt script!! -->
-                        <span class="fa fa-dashboard"></span>Category
+                        <!-- Category's symbol // dashbord is only for testing purposes -->
+                        <i class="fa fa-dashboard"></i>Category 1
                     </label>
-                    <!-- Category's children page items -->
-                    <!-- REMINDER: '<ul>' structure is not in the original snippet; Must adapt script!! -->
-                    <ul>
-                        <li><a href="#">Item Page 1</a></li>
-                        <li><a href="#">Item Page 2</a></li>
-                        <li><a href="#">Item Page 3</a></li>
-                    </ul>
+                    <!-- Category's children page items -->                  
+                    <a href="#">Item Page 1</a>
+                    <a href="#">Item Page 2</a>
+                    <a href="#">Item Page 3</a>
                 </li>
+                
+                <!-- Accordion will open when input is 'checked' -->
+                <input type="radio" name="menu" id="category-2">
+                <li>
+                    <label for="category-2" class="title">
+                        <!-- Category's symbol // tasks is only for testing purposes -->
+                        <i class="fa fa-tasks"></i>Category 2
+                    </label>
+                    <!-- Category's children page items -->                  
+                    <a href="#">Item Page 1</a>
+                    <a href="#">Item Page 2</a>
+                    <a href="#">Item Page 3</a>
+                </li>
+
+
             </ul>
 
         </nav>

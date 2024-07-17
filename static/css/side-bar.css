@@ -18,7 +18,13 @@ This rules will be in the 'style.css' file */
   'opsz' 20
 }
 
+h1 {
+	font-size: 2em;
+}
 
+p {
+	font-size: 1em;
+}
 /* --------------------------------------- */
 
 
@@ -103,3 +109,25 @@ main {
     padding: 10px;
     float: right;
 }
+
+/* CONTINUE HEREE */
+
+/* ADD a row for the logo and separate it width a hr 
+Follow this as a renference: https://threejs.org/examples/*/
+
+
+/* ADD rules to make the side bar responsive:
+
+As it is for now, create a jquery for the sidebar to collapse in a hamburger menu wich will live
+in tjhe horizontal navbar (wich holds the logo); position it at the right (as a drawer menu wwith shadow in order to obscure (and lock) down layers.
+
+Follow this as a renference: https://threejs.org/examples/
+*/
+
+/* ADD a rule to clip longer titles of the 'page items'.
+
+It would be nice to clip it this way:
+"This is a very long title for a page item" 
+to
+"This is a very long title ..."
+*/

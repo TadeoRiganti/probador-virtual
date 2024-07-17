@@ -4,13 +4,15 @@
     font-family: monospace;
     box-sizing: border-box;
 }
+
 nav { 
 	width: 20%;
     height: 100vh;
 	background-color: #111;
     float: left;
 }
-.title{
+
+.title {
     background: linear-gradient(#000, #222);
 	font-size: 14px;
 	display: block;
@@ -19,14 +21,16 @@ nav {
     transition: all .25s;
 	color: #FFF;
 }
-ul li{
+
+ul li {
 	background-color: #111;
 	height: 35px;
 	overflow: hidden;
 	transition: all .3s;
 	font-weight: bold;	
 }
-a{
+
+a {
 	font-size: 12px;
 	text-decoration: none;
 	display: block;
@@ -34,20 +38,25 @@ a{
 	transition: all .25s;
 	color: #FFF;
 }
+
 a:hover {
 	background-color: #333;
     box-shadow: inset 5px 0px 0px 0px #f00;
 }
+
 .title:hover {
 	text-shadow: 0px 0px 10px #fff;
 }
+
 input[type="radio"] {
 	display: none;
 }
-#category-1 + li, #category-2s:checked + li  {
+
+input:checked + li  {
 	height: 140px;
 }
-i {
+
+span {
 	margin-right: 10px;
 }
 .main {

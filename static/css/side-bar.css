@@ -32,25 +32,27 @@ nav .title {
     align-items: center;
 	padding: 0.5em 1em; 
 	cursor: pointer;
-    transition: all .25s;
+    transition: all 5s;
 	color: #FFF;
 }
 
 
 nav ul li {
-	/* background-color: red; */
-	height: 35px;
+	/* 'height' is acting as the line-heigth of the list 
+    As it is hardoced, maybe it'll break in the future*/
+	height: 3.5em; 
 	overflow: hidden;
-	transition: all .3s;
+	transition: all 5s;
 	font-weight: bold;	
+    background-color: red;
 }
 
 nav a {
-	font-size: 12px;
+	font-size: 1em;
 	text-decoration: none;
 	display: block;
 	padding: 10px 25px;
-	transition: all .25s;
+	transition: all 5s;
 	color: #FFF;
 }
 
@@ -67,12 +69,16 @@ nav input[type="radio"] {
 	display: none;
 }
 
+/* 'height' configurates the size of the open menu. 
+'max-content' fix the issue of having different 
+amount of items, but for some reason it disrupts
+the animated transition */
 nav input:checked + li  {
 	height: max-content;
 }
 
 nav span {
-	margin-right: 10px;
+	margin-right: 0.5em;
 }
 
 main .main {

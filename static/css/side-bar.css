@@ -112,6 +112,17 @@ main {
 
 /* CONTINUE HEREE */
 
+/* FIX position of the navbar
+   ADD a scroll when navbar content
+   surpases the height of it */
+
+/* CHANGE the hardcoded value of the padding in the main section.
+Look what happens when screen is too wide.
+
+Also would you please..
+
+ADD Margins on each side*/
+
 /* ADD a row for the logo and separate it width a hr 
 Follow this as a renference: https://threejs.org/examples/*/
 
@@ -131,3 +142,5 @@ It would be nice to clip it this way:
 to
 "This is a very long title ..."
 */
+
+/* ADD a rule to fill the row when clicked */

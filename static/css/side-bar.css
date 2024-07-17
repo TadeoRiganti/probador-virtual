@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+/* MATERIAL UI */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+/* MATERIAL UI */
+
+
 nav { 
 	width: 20%;
     height: 100vh;
@@ -12,9 +25,9 @@ nav {
     float: left;
 }
 
-.title {
+nav .title {
     background: linear-gradient(#000, #222);
-	font-size: 14px;
+	font-size: 16px;
 	display: block;
 	padding: 10px 15px;
 	cursor: pointer;
@@ -22,7 +35,7 @@ nav {
 	color: #FFF;
 }
 
-ul li {
+nav ul li {
 	background-color: #111;
 	height: 35px;
 	overflow: hidden;
@@ -30,7 +43,7 @@ ul li {
 	font-weight: bold;	
 }
 
-a {
+nav a {
 	font-size: 12px;
 	text-decoration: none;
 	display: block;
@@ -39,27 +52,28 @@ a {
 	color: #FFF;
 }
 
-a:hover {
+nav a:hover {
 	background-color: #333;
     box-shadow: inset 5px 0px 0px 0px #f00;
 }
 
-.title:hover {
+nav .title:hover {
 	text-shadow: 0px 0px 10px #fff;
 }
 
-input[type="radio"] {
+nav input[type="radio"] {
 	display: none;
 }
 
-input:checked + li  {
+nav input:checked + li  {
 	height: 140px;
 }
 
-span {
+nav span {
 	margin-right: 10px;
 }
-.main {
+
+main .main {
     width: 80%;
     padding: 10px;
     float: right;

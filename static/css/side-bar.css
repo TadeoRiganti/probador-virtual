@@ -1,3 +1,9 @@
+:root{
+    --estado-buda: 0.3s;
+    --cada-item: 28px;
+    --cantidad-items: 0;
+}
+
 /* JUST FOR TEST PURPOSES
 This rules will be in the 'style.css' file */
 
@@ -114,10 +120,15 @@ will hidde and appear overlapping the main content
 (with a dark shadow to obscure anything its behind*/
 
 main {
-    width: 70%;
     padding: 10px;
-    /* float: right; */
+    background-color: #111;
 }
+
+
+
+
+
+
 
 /* CONTINUE HEREE */
 

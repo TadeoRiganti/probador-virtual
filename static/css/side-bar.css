@@ -1,7 +1,11 @@
 :root{
-    --estado-buda: 0.3s;
-    --cada-item: 28px;
-    --cantidad-items: 0;
+	--primary-color: white;
+	--secondary-color: black;
+	--neutral-color-75: #333;
+
+	--column-width: 360px;
+
+    --animation-delayn: 0.3s;
 }
 
 /* JUST FOR TEST PURPOSES
@@ -43,14 +47,14 @@ body{
     gap: 30px;
 }
 
-
-nav { 
-	width: 300px;
-    height: 100vh;
-	background-color: #111;
-    /* float: left; */
+header nav {
+    width: 360px;
+    background: black;
+	height: 100vh;
+	position: fixed;
 	overflow-y: auto;
 }
+
 
 nav .title {
 	font-size: 1.5em;
@@ -59,7 +63,7 @@ nav .title {
     align-items: center;
 	padding: 0.5em 1em; 
 	cursor: pointer;
-	color: #FFF;
+	color: white;
 }
 
 
@@ -89,12 +93,12 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #333;
-    box-shadow: inset 5px 0px 0px 0px #00A650;
+	background-color: var(--neutral-color-75);
+    /* box-shadow: inset 5px 0px 0px 0px #00A650; */
 }
 
 nav .title:hover {
-	background-color: #00A650;
+	background-color: var(--neutral-color-75);
 }
 
 nav input[type="radio"] {
@@ -120,29 +124,14 @@ will hidde and appear overlapping the main content
 (with a dark shadow to obscure anything its behind*/
 
 main {
-    padding: 10px;
-    background-color: #111;
+	margin-left: var(--column-width);
+	padding: 1em;
 }
 
 
 
 
-
-
-
 /* CONTINUE HEREE */
-
-/* FIX position of the navbar
-   ADD a scroll when navbar content
-   surpases the height of it */
-
-/* CHANGE the hardcoded value of the padding in the main section.
-Look what happens when screen is too wide.
-
-Also would you please..
-
-ADD Margins on each side*/
-
 /* ADD a row for the logo and separate it width a hr 
 Follow this as a renference: https://threejs.org/examples/*/
 

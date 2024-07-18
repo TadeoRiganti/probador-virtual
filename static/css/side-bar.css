@@ -35,10 +35,15 @@ h1 {
 p {
 	font-size: 1em;
 }
+
+.logo span{
+	padding: 0 .3em;
+}
+
 /* --------------------------------------- */
 
 
-body{
+body {
     display: flex;
     min-height: 100vh;
     margin:0;
@@ -47,23 +52,74 @@ body{
     gap: 30px;
 }
 
+
+
+/* NAVIGATION */
+
 header nav {
     width: 360px;
-    background: black;
+	color: var(--primary-color);
+    background: var(--secondary-color);
 	height: 100vh;
 	position: fixed;
 	overflow-y: auto;
 }
 
+header nav a {
+	font-size: 1em;
+	text-decoration: none;
+	display: block;
+	padding: 10px 25px;
+	color: var(--primary-color);
+}
 
-nav .title {
+
+/* TOP navigation bar */
+
+header nav .top-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header nav .top-navigation a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: left;
+	padding: 1em;
+}
+
+/* Optional; makes it easier to go back to home */
+header nav .top-navigation #home {
+	width: 100%;
+}
+
+header nav .top-navigation .icon {
+	/* Should be hidden when the side-navigation is visible.
+	Meaning, that a Jquery will make it appear. But I'll wait untill I code the sript */
+}
+
+
+/* SIDE navigation bar */
+
+/* Separate visually the top-nav with the side-nav */
+header nav .side-navigation {
+	padding-top: 1em;
+}
+
+/* Add style to Category's items */
+header nav .side-navigation .title {
 	font-size: 1.5em;
 	display: flex;
 	height: auto;
     align-items: center;
 	padding: 0.5em 1em; 
 	cursor: pointer;
-	color: white;
+	color: var(--primary-color);
+}
+
+nav .title:hover {
+	background-color: var(--neutral-color-75);
 }
 
 
@@ -79,27 +135,19 @@ nav li {
 	  of each category will be very short.
 	So take in mind this limitation if you want to use this code
 	in future projects*/
-	height: 3.5em;
+	height: 3em;
 	overflow: hidden;
 	font-weight: bold;	
 }
 
-nav a {
-	font-size: 1em;
-	text-decoration: none;
-	display: block;
-	padding: 10px 25px;
-	color: #FFF;
-}
+
 
 nav a:hover {
 	background-color: var(--neutral-color-75);
     /* box-shadow: inset 5px 0px 0px 0px #00A650; */
 }
 
-nav .title:hover {
-	background-color: var(--neutral-color-75);
-}
+
 
 nav input[type="radio"] {
 	display: none;
@@ -113,7 +161,7 @@ nav input:checked + li  {
 	height: max-content;
 }
 
-nav span {
+header nav .side-navigation span {
 	margin-right: 0.5em;
 }
 

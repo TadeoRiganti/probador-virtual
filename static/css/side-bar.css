@@ -172,13 +172,10 @@ main {
 	padding: 1em;
 }
 
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
-
-/* CONTINUE HEREE */
-/* ADD a row for the logo and separate it width a hr 
-Follow this as a renference: https://threejs.org/examples/*/
-
+/* CONTINUE HERE */
 
 /* ADD rules to make the side bar responsive:
 
@@ -188,6 +185,9 @@ in tjhe horizontal navbar (wich holds the logo); position it at the right (as a 
 Follow this as a renference: https://threejs.org/examples/
 */
 
+/* --------------------------------------------------------------- */
+/* OPTIONAL */
+
 /* ADD a rule to clip longer titles of the 'page items'.
 
 It would be nice to clip it this way:
@@ -195,5 +195,3 @@ It would be nice to clip it this way:
 to
 "This is a very long title ..."
 */
-
-/* ADD a rule to fill the row when clicked */

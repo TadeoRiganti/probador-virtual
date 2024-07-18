@@ -124,6 +124,9 @@ will hidde and appear overlapping the main content
 (with a dark shadow to obscure anything its behind*/
 
 main {
+	/* This prevents to overflow (at some extent) */
+	width: calc(100vw - var(--column-width));
+	/* This margin prevents to go under the fixed side bar */
 	margin-left: var(--column-width);
 	padding: 1em;
 }

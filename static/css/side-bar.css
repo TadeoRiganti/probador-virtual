@@ -3,7 +3,7 @@
 	--secondary-color: black;
 	--neutral-color-75: #333;
 
-	--column-width: 360px;
+	--column-width: clamp(250px, 360px, 30%);
 
     --animation-delayn: 0.3s;
 }
@@ -36,7 +36,7 @@ p {
 	font-size: 1em;
 }
 
-.logo span{
+.logo span {
 	padding: 0 .3em;
 }
 
@@ -59,7 +59,7 @@ body {
 /* General style for navigation bars */
 header {
 	/* Width for Desktop version */
-    width: 360px;
+    width: var(--column-width);
 	color: var(--primary-color);
     background: var(--secondary-color);
 	height: 100vh;
@@ -67,7 +67,7 @@ header {
 	overflow-y: auto;
 }
 
-nav input[type="radio"] {
+header nav input[type="radio"] {
 	display: none;
 }
 
@@ -191,8 +191,9 @@ Follow this as a renference: https://threejs.org/examples/
 		width: 100vw;
 		height: fit-content;
 	}
-	
-	.side-navigation {
+
+	/* Maybe scripts change only this */
+	.side-navigation, nav hr {
 		display: none;
 	}
 	
@@ -202,6 +203,11 @@ Follow this as a renference: https://threejs.org/examples/
 	}
 }
 
+
+/* Create a rule to avoid content to go behing the top nav bar (in movile version */
+
+
+/* Look for the possibility to resolve the hamburger menu in the same fashion as the sidebar; meaning no JS */
 
 
 

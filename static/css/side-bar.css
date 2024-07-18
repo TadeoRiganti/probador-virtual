@@ -56,7 +56,9 @@ body {
 
 /* NAVIGATION */
 
-header nav {
+/* General style for navigation bars */
+header {
+	/* Width for Desktop version */
     width: 360px;
 	color: var(--primary-color);
     background: var(--secondary-color);
@@ -65,6 +67,11 @@ header nav {
 	overflow-y: auto;
 }
 
+nav input[type="radio"] {
+	display: none;
+}
+
+/* Stylize items of the navigation bars */
 header nav a {
 	font-size: 1em;
 	text-decoration: none;
@@ -73,15 +80,25 @@ header nav a {
 	color: var(--primary-color);
 }
 
+/* Higltight hovered item with lighter tone */
+header nav a:hover, .title:hover {
+	background-color: var(--neutral-color-75);
+}
+
+
+
+
 
 /* TOP navigation bar */
 
+/* Shapes into a row */
 header nav .top-navigation {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
+/* layout of inner items */
 header nav .top-navigation a {
 	display: inline-flex;
 	align-items: center;
@@ -89,23 +106,14 @@ header nav .top-navigation a {
 	padding: 1em;
 }
 
-/* Optional; makes it easier to go back to home */
+/* Optional; HOME button grows taking empty space  */
 header nav .top-navigation #home {
-	width: 100%;
+	flex: 1;
 }
 
-header nav .top-navigation .icon {
-	/* Should be hidden when the side-navigation is visible.
-	Meaning, that a Jquery will make it appear. But I'll wait untill I code the sript */
-}
 
 
 /* SIDE navigation bar */
-
-/* Separate visually the top-nav with the side-nav */
-header nav .side-navigation {
-	padding-top: 1em;
-}
 
 /* Add style to Category's items */
 header nav .side-navigation .title {
@@ -118,12 +126,13 @@ header nav .side-navigation .title {
 	color: var(--primary-color);
 }
 
-nav .title:hover {
-	background-color: var(--neutral-color-75);
+/* Separates symbol from title */
+header nav .side-navigation span {
+	margin-right: 0.3em;
 }
 
-
-nav li {
+/* Gives style to items in the list */
+header nav .side-navigation li {
 	/* DEVELOPER NOTES:
 	'height' is acting as the line-heigth of the list:
 	- If height is low, labels will overlap.
@@ -137,20 +146,6 @@ nav li {
 	in future projects*/
 	height: 3em;
 	overflow: hidden;
-	font-weight: bold;	
-}
-
-
-
-nav a:hover {
-	background-color: var(--neutral-color-75);
-    /* box-shadow: inset 5px 0px 0px 0px #00A650; */
-}
-
-
-
-nav input[type="radio"] {
-	display: none;
 }
 
 /* 'height' configurates the size of the open menu. 
@@ -161,9 +156,7 @@ nav input:checked + li  {
 	height: max-content;
 }
 
-header nav .side-navigation span {
-	margin-right: 0.5em;
-}
+
 
 /* MAIN */
 

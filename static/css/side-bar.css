@@ -185,6 +185,26 @@ in tjhe horizontal navbar (wich holds the logo); position it at the right (as a 
 Follow this as a renference: https://threejs.org/examples/
 */
 
+
+@media (max-width: 720px) {
+	header {
+		width: 100vw;
+		height: fit-content;
+	}
+	
+	.side-navigation {
+		display: none;
+	}
+	
+	main {
+		width: auto;
+		margin: 1em;
+	}
+}
+
+
+
+
 /* --------------------------------------------------------------- */
 /* OPTIONAL */
 
@@ -195,3 +215,4 @@ It would be nice to clip it this way:
 to
 "This is a very long title ..."
 */
+

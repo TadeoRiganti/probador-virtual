@@ -3,6 +3,7 @@
 	--secondary-color: black;
 	--neutral-color-75: #333;
 
+	--navbar-height: 60px;
 	--column-width: clamp(250px, 360px, 30%);
 
     --animation-delayn: 0.3s;
@@ -45,7 +46,6 @@ img {
 }
 
 /* --------------------------------------- */
-
 
 /* NAVIGATION */
 
@@ -165,7 +165,7 @@ main {
 	width: calc(100vw - var(--column-width));
 	/* This margin prevents to go under the fixed side bar */
 	margin-left: var(--column-width);
-	padding: 1em;
+	padding: 2.4em clamp(1em, 5vw, 10vw);
 }
 
 /* Movile version */
@@ -176,7 +176,7 @@ main {
 	}
 
 	body {
-		padding-top: 3em;
+		padding-top: var(--navbar-height);
 	}
 
 	/* Maybe scripts change only this */
@@ -191,7 +191,7 @@ main {
 	
 	main {
 		width: auto;
-		margin: 1em;
+		margin-left: 0;
 	}
 }
 
@@ -202,7 +202,6 @@ main {
 
 /* Follow this as a renference: https://threejs.org/examples/
 */
-
 
 
 /* Create a rule to avoid scroll bar to overlap with main */

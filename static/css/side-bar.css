@@ -2,10 +2,11 @@
 	--primary-color: white;
 	--secondary-color: black;
 	--neutral-color-75: #333;
+	--neutral-color-10: hsl(0, 0%, 90%);
 
 	--navbar-height: 60px;
 	--column-width: clamp(250px, 360px, 30%);
-
+    --main-width: calc(100vw - var(--column-width));
     --animation-delayn: 0.3s;
 }
 
@@ -37,11 +38,19 @@ p {
 }
 
 .logo span {
-	padding: 0 .3em;
+	padding-right: 0.3em;
 }
 
 img {
-	width: clamp(250px, 50%, 500px);
+	width: clamp(200px, 500px, 50vw);
+}
+
+
+
+/* movile */
+@media (max-width: 480px) {
+	img {width: 100%;
+	}
 }
 
 
@@ -129,19 +138,33 @@ model-viewer .hotspot[slot=hotspot-7] {
 
 /* Desktop version */
 main {
-	/* This prevents to overflow (at some extent) */
-	width: calc(100vw - var(--column-width));
 	/* This margin prevents to go under the fixed side bar */
 	margin-left: var(--column-width);
-	padding: 2.4em clamp(1em, 5vw, 10vw);
 }
 
 main :is(ul, ol) {
     list-style-position: inside
 }
 
+/* SECTION */
+
+main section {
+	padding: 2.4em clamp(1em, 5vw, 10vw);
+}
 
 
+/* movile */
+@media (min-width: 480px) {
+	main section div.columns {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	
+	}
+}
+
+main section div {
+	width: 100%;
+}
 
 
 /* ARTICLE */
@@ -149,14 +172,15 @@ main :is(ul, ol) {
 article {
 	display: flex;
 	flex-direction: column;
-	gap: 2em;
+	justify-content: center;
+
 }
 
 
-article section {
+article :is(section, div) {
 	display: flex;
 	flex-direction: column;
-	gap: 1.5em;
+	gap: 1em;
 }
 
 
@@ -172,6 +196,7 @@ header {
 	color: var(--primary-color);
     background: var(--secondary-color);
 	height: 100vh;
+	z-index: 999;
 	top: 0;
 	position: fixed;
 	overflow-y: auto;
@@ -179,6 +204,10 @@ header {
 
 header nav input[type="radio"] {
 	display: none;
+}
+
+header nav .title {
+	font-weight: bold;
 }
 
 /* Stylize items of the navigation bars */
@@ -223,6 +252,7 @@ header nav .top-navigation .icon {
 
 /* Optional; HOME button grows taking empty space  */
 header nav .top-navigation #home {
+	font-size: 1.5em;
 	flex: 1;
 }
 
@@ -275,8 +305,6 @@ nav input:checked + li  {
 
 
 
-
-
 /* Movile version */
 @media (max-width: 720px) {
 	header {
@@ -302,6 +330,19 @@ nav input:checked + li  {
 		width: auto;
 		margin-left: 0;
 	}
+}
+
+
+/* SECTIONS */
+
+/* TESTING AREA */
+
+/* VIEWPORT */
+
+#testing-area {
+	width: inherit;
+	color: var(--primary-color);
+	background-color: var(--neutral-color-75);
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

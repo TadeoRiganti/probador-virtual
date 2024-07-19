@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="..\static\css\side-bar.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Model viewer component -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
@@ -14,7 +20,7 @@
         <nav>
             <!-- Top navigation -->
             <div class="top-navigation">
-                <a href="#" id="home" class="logo"><span class="material-symbols-outlined">home</span>HOME</a>
+                <a href="#" id="home" class="logo title"><span class="material-symbols-outlined">home</span>HOME</a>
                 <!-- Change afterwards class 'icon' for 'button-menu' -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span></a>
             </div>
@@ -72,20 +78,20 @@
     </header>    
     <main>
         <article>
-            <h1>Name of the experiment</h1>
             <section id="about">
+                <h1>Name of the experiment</h1>
                 <h2>Headline about the experiment (WHAT)</h2>
                 <p>
-                        A brief explanation about the reasons (WHY, its causes) this is an article on its own. Keep it sweet and short, about 2-3 lines of text.
+                    A brief explanation about the reasons (WHY, its causes) this is an article on its own. Keep it sweet and short, about 2-3 lines of text.
                 </p>
+                <h3>Objectives</h3>
                 <ul>
-                    <h3>Objectives</h3>
                     <li>Keep it brief</li>
                     <li>List only the most important ones</li>
                     <li>If you want to number them, use an OL tag.</li>
                 </ul>
-                <nav>
-                    <h3>Table of contents</h3>
+                <h3>Table of contents</h3>
+                <nav>  
                     <ol>
                         <li><a href="#info">Debriefing</a></li>
                         <li><a href="#testing-area">Testing area</a></li>
@@ -99,12 +105,24 @@
                 <p>
                         Describe who will use it and how it will be used; is it just to view a 3D model or AR (inside/outside), etc.
                 </p>
-                <h3>Description</h3>
-                <p> Describe the object it will be replicated; from morphological characteristics, functions, etc.</p>
-                <img src="https://static9.depositphotos.com/1052036/1206/v/450/depositphotos_12069970-stock-illustration-3d-word-symbol.jpg" alt=""> 
+                <div class="container columns">
+                    <div class="description">
+                        <h3>Description</h3>
+                        <p> 
+                            Describe the object it will be replicated; from morphological characteristics, functions, etc.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <img src="..\static\img\lab-chifonier-padua-cipriano_muebles.jpg" alt="">
+                        <caption>Space reserved for captions.</caption>
+                    </div>
+                    
+                </div>
+                 
             </section>
-            <section id="testing-area" class="viewport">
-                <h2>Testing area</h2>
+            <section id="testing-area">
+                <div class="container">
+                    <h2>Testing area</h2>
                 <p>
                         Technical information of the virtual try-on filter.
                 </p>
@@ -123,11 +141,13 @@
                         tone-mapping="aces">
                     </model-viewer>
                 </div> 
+                </div>
+                
             </section>
             <section id="conclusions">
                 <h2>Conclusions</h2>
                 <p>
-                        Describe who will use it and how it will be used; is it just to view a 3D model or AR (inside/outside), etc.
+                        Describe what happened, wich issues or surprises you have encountered and if your hypothesis was correct or not.
                 </p>
                 <h3>Insights</h3>
                 <ul>

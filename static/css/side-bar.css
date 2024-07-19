@@ -45,7 +45,42 @@ img {
 	width: clamp(250px, 50%, 500px);
 }
 
+
+
 /* --------------------------------------- */
+
+/* MAIN */
+
+/* Desktop version */
+main {
+	/* This prevents to overflow (at some extent) */
+	width: calc(100vw - var(--column-width));
+	/* This margin prevents to go under the fixed side bar */
+	margin-left: var(--column-width);
+	padding: 2.4em clamp(1em, 5vw, 10vw);
+}
+
+main :is(ul, ol) {
+    list-style-position: inside
+}
+
+
+/* ARTICLE */
+
+article {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+
+article section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+}
+
+
 
 /* NAVIGATION */
 
@@ -157,16 +192,7 @@ nav input:checked + li  {
 
 
 
-/* MAIN */
 
-/* Desktop version */
-main {
-	/* This prevents to overflow (at some extent) */
-	width: calc(100vw - var(--column-width));
-	/* This margin prevents to go under the fixed side bar */
-	margin-left: var(--column-width);
-	padding: 2.4em clamp(1em, 5vw, 10vw);
-}
 
 /* Movile version */
 @media (max-width: 720px) {

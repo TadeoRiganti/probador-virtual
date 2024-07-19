@@ -1,6 +1,6 @@
 :root{
 	--primary-color: white;
-	--secondary-color: black;
+	--secondary-color: #252525;
 	--neutral-color-75: #333;
 	--neutral-color-10: hsl(0, 0%, 90%);
 
@@ -19,10 +19,16 @@
 * {
     margin: 0;
 	padding: 0;
-    font-family: monospace;
+    font-family: inter, 'roboto mono',monospace;
     box-sizing: border-box;
 }
 
+/* TRANSITION */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--navbar-height);
+}
 
 
 
@@ -42,13 +48,18 @@ p {
 }
 
 img {
+	border-radius: 10px;
 	width: clamp(200px, 500px, 50vw);
+}
+
+.container img {
+	width:100%; 
 }
 
 
 
 /* movile */
-@media (max-width: 480px) {
+@media (max-width: 720px) {
 	img {width: 100%;
 	}
 }
@@ -154,7 +165,7 @@ main section {
 
 
 /* movile */
-@media (min-width: 480px) {
+@media (min-width: 720px) {
 	main section div.columns {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

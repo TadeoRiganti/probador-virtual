@@ -9,8 +9,11 @@
     --animation-delayn: 0.3s;
 }
 
-/* JUST FOR TEST PURPOSES
-This rules will be in the 'style.css' file */
+
+/* --------------------------------------- */
+
+
+/* GENERAL */
 
 * {
     margin: 0;
@@ -19,15 +22,11 @@ This rules will be in the 'style.css' file */
     box-sizing: border-box;
 }
 
-/* MATERIAL UI */
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 20
-}
+
+
+/* ELEMENTS */
+
 
 h1 {
 	font-size: 2em;
@@ -46,7 +45,18 @@ img {
 }
 
 
-/* --- 1.2.4 Model viewer --- */
+/* MATERIAL UI */
+
+.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 20
+  }
+
+
+/* MODEL-VIEWER COMPONENT */
 
 :not(:defined) > * {
     display: none;
@@ -59,18 +69,13 @@ model-viewer {
     width: inherit;
 }
 
-
 div > model-viewer {
     height: 400px;
 }
 
-
 div.wide > model-viewer {
     height: 200px;
 }
-/* El atributo 'camera-orbit="360deg 80deg 60%"', donde '60%' acerca la distancia entre la camara y el objeto. */
-
-/* Hotspots */
 
 /* Hide hotspot */
 model-viewer .hotspot{
@@ -79,13 +84,11 @@ model-viewer .hotspot{
     border: none;
   }
 
-
 /* Annotations */
 
 model-viewer button {
     --min-hotspot-opacity: 0;
 }
-
 /* Change max-with with clamp like font treatment */
 model-viewer .annotation {
     border-radius:10px;
@@ -120,6 +123,7 @@ model-viewer .hotspot[slot=hotspot-7] {
 
 
 /* --------------------------------------- */
+
 
 /* MAIN */
 

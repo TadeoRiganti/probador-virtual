@@ -41,7 +41,7 @@ p {
 }
 
 img {
-	width: clamp(300px, 50%, 500px);
+	width: clamp(250px, 50%, 500px);
 }
 
 /* --------------------------------------- */
@@ -159,10 +159,7 @@ nav input:checked + li  {
 
 /* MAIN */
 
-/* This will change in responsive as the sidebar
-will hidde and appear overlapping the main content
-(with a dark shadow to obscure anything its behind*/
-
+/* Desktop version */
 main {
 	/* This prevents to overflow (at some extent) */
 	width: calc(100vw - var(--column-width));
@@ -171,24 +168,15 @@ main {
 	padding: 1em;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
-/* CONTINUE HERE */
-
-/* ADD rules to make the side bar responsive:
-
-As it is for now, create a jquery for the sidebar to collapse in a hamburger menu wich will live
-in tjhe horizontal navbar (wich holds the logo); position it at the right (as a drawer menu wwith shadow in order to obscure (and lock) down layers.
-
-Follow this as a renference: https://threejs.org/examples/
-*/
-
-
+/* Movile version */
 @media (max-width: 720px) {
 	header {
 		width: 100vw;
 		height: fit-content;
+	}
+
+	body {
+		padding-top: 3em;
 	}
 
 	/* Maybe scripts change only this */
@@ -207,8 +195,15 @@ Follow this as a renference: https://threejs.org/examples/
 	}
 }
 
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* Create a rule to avoid content to go behing the top nav bar (in movile version */
+
+/* CONTINUE HERE */
+
+/* Follow this as a renference: https://threejs.org/examples/
+*/
+
+
 
 /* Create a rule to avoid scroll bar to overlap with main */
 

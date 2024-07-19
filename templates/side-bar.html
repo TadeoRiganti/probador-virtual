@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\static\css\side-bar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Model viewer component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +14,7 @@
         <nav>
             <!-- Top navigation -->
             <div class="top-navigation">
-                <a href="#"><span class="material-symbols-outlined">home</span>HOME</a>
+                <a href="#" id="home" class="logo"><span class="material-symbols-outlined">home</span>HOME</a>
                 <!-- Change afterwards class 'icon' for 'button-menu' -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span></a>
             </div>
@@ -21,73 +23,129 @@
             <!-- Panel for content list -->
             <ul class="side-navigation"> 
                 <!-- Accordion will open when input is 'checked' -->
-                <input type="radio" name="menu" id="category-1" checked>
+                <input type="radio" name="menu" id="Laboratory" checked>
                 <li>
-                    <label for="category-1" class="title">
+                    <label for="Laboratory" class="title">
                         <!-- Category's symbol // dashbord is only for testing purposes -->
-                        <span class="material-symbols-outlined">category</span>Category 1
+                        <span class="material-symbols-outlined">experiment</span>Laboratory
                     </label>
                     <!-- Category's children page items -->                  
                     <ul>
-                        <li><a href="#">Item Page 1</a></li>
-                        <li><a href="#">Item Page 2</a></li>
-                        <li><a href="#">Item Page 3</a></li>
-                        <li><a href="#">Item Page 4</a></li>
-                        <li><a href="#">Item Page 5</a></li>
+                        <li><a href="#">Name of the experiment</a></li>
+                        <li><a href="#">Another name for it</a></li>
+                        <li><a href="#">It has to be short</a></li>
+                        <li><a href="#">Self-explanatory</a></li>
                     </ul>
                 </li>
 
                 <!-- Accordion will open when input is 'checked' -->
-                <input type="radio" name="menu" id="category-2">
+                <input type="radio" name="menu" id="documentation">
                 <li>
-                    <label for="category-2" class="title">
+                    <label for="documentation" class="title">
                         <!-- Category's symbol // tasks is only for testing purposes -->
-                        <span class="material-symbols-outlined">category</span>Category 2
+                        <span class="material-symbols-outlined">article</span>Documentation
                     </label>
                     <!-- Category's children page items -->                  
                     <ul>
-                        <li><a href="#">Item Page 1</a></li>
-                        <li><a href="#">Item Page 2</a></li>
-                        <li><a href="#">Item Page 3</a></li>
-                        <li><a href="#">Item Page 4</a></li>
-                        <li><a href="#">Item Page 5</a></li>
-                        <li><a href="#">Item Page 6</a></li>
-                        <li><a href="#">Item Page 7</a></li>
-                        <li><a href="#">Item Page 8</a></li>
-                        <li><a href="#">Item Page 9</a></li>
-                        <li><a href="#">Item Page 10</a></li>
+                        <li><a href="#">Article about process</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="#">Some technique</a></li>
+                        <li><a href="#">Anything worth mention</a></li>
                     </ul>
                 </li>
 
                 <!-- Accordion will open when input is 'checked' -->
-                <input type="radio" name="menu" id="category-3">
+                <input type="radio" name="menu" id="tools">
                 <li>
-                     <label for="category-3" class="title">
+                     <label for="tools" class="title">
                          <!-- Category's symbol // tasks is only for testing purposes -->
-                         <span class="material-symbols-outlined">category</span>Category 3
+                         <span class="material-symbols-outlined">handyman</span>Tools
                      </label>
                      <!-- Category's children page items -->                  
                      <ul>
-                         <li><a href="#">Item Page 1</a></li>
-                         <li><a href="#">Item Page 2</a></li>
-                         <li><a href="#">Item Page 3</a></li>
+                         <li><a href="#">About a tool</a></li>
+                         <li><a href="#">External references</a></li>
                      </ul>
                 </li>
             </ul>
         </nav>
     </header>    
     <main>
-        <section>
-            <div class="container">
-                <article>
-                    <h1>Category</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, laborum fugit! Deleniti maxime praesentium velit voluptatum fugiat assumenda pariatur, rem illo nobis est minima necessitatibus minus fuga reiciendis animi cum nostrum distinctio nesciunt eveniet culpa, molestias quas debitis voluptates obcaecati. Deleniti itaque tenetur facilis corrupti a consequuntur perspiciatis.
-                    </p>
-                    <img src="https://static9.depositphotos.com/1052036/1206/v/450/depositphotos_12069970-stock-illustration-3d-word-symbol.jpg" alt="">
-                </article>
-            </div>
-        </section>
+        <article>
+            <h1>Name of the experiment</h1>
+            <section id="about">
+                <h2>Headline about the experiment (WHAT)</h2>
+                <p>
+                        A brief explanation about the reasons (WHY, its causes) this is an article on its own. Keep it sweet and short, about 2-3 lines of text.
+                </p>
+                <ul>
+                    <h3>Objectives</h3>
+                    <li>Keep it brief</li>
+                    <li>List only the most important ones</li>
+                    <li>If you want to number them, use an OL tag.</li>
+                </ul>
+                <nav>
+                    <h3>Table of contents</h3>
+                    <ol>
+                        <li><a href="#info">Debriefing</a></li>
+                        <li><a href="#testing-area">Testing area</a></li>
+                        <li><a href="#conclusions">Conclusions</a></li>
+                    </ol>
+                </nav>
+            </section>
+            <section id="info">
+                <h2>Debriefing</h2>
+                <h3>Context</h3>
+                <p>
+                        Describe who will use it and how it will be used; is it just to view a 3D model or AR (inside/outside), etc.
+                </p>
+                <h3>Description</h3>
+                <p> Describe the object it will be replicated; from morphological characteristics, functions, etc.</p>
+                <img src="https://static9.depositphotos.com/1052036/1206/v/450/depositphotos_12069970-stock-illustration-3d-word-symbol.jpg" alt=""> 
+            </section>
+            <section id="testing-area" class="viewport">
+                <h2>Testing area</h2>
+                <p>
+                        Technical information of the virtual try-on filter.
+                </p>
+                <div class="visor">
+                    <model-viewer
+                        alt="Modelo 3D de la cabeza de un chimpance"
+                        src="..\static\assets\chifonier_closed.glb"
+                        ar
+                        camera-controls
+                        camera-orbit="360deg 80deg"
+                        max-camera-orbit="Infinity 94deg auto"
+                        min-camera-orbit="-Infinity 45deg auto"
+                        disable-pan
+                        disable-zoom
+                        shadow-intensity="1"
+                        tone-mapping="aces">
+                    </model-viewer>
+                </div> 
+            </section>
+            <section id="conclusions">
+                <h2>Conclusions</h2>
+                <p>
+                        Describe who will use it and how it will be used; is it just to view a 3D model or AR (inside/outside), etc.
+                </p>
+                <h3>Insights</h3>
+                <ul>
+                    <li>
+                        <h4>Name of the insight</h4>
+                        <p>Explain it in anutshell. I think that 2-3 lines is good.</p>
+                    </li>
+                    <li>
+                        <h4>Add anything that helps explain it</h4>
+                        <p>Such as images, concepts, even external references.</p>
+                    </li>
+
+                </ul>
+                <h3>Final thoughts</h3>
+                <p> How this will impact on the project. Is it needed to continue experimenting? If so, continue in this same page with another article. I won't template it, but I'll think later how to tackle it (maybe an initial section with a table of contents).</p>
+ 
+            </section>
+        </article>
         
     </main>
 </body>

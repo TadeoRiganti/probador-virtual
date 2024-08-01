@@ -1,0 +1,22 @@
+FEATURES:
+
+PROBLEM:
+When visiting the site in a Desktop PC, Ar button doesn't show as it is a movile feature only.
+This solution doesn't impact the overall experience, unless the user opens up the site on its movile device.
+
+INITIAL SOLUTION: 
+Provide a QR (that only shows in desktop) that let's user to acces the model with their movile devices.
+
+ISSUES:
+As explained by [Elalish](https://github.com/google/model-viewer/discussions/2933#discussioncomment-1554375), in order to work user need to download the 3d asset in it's device (this happens every time a user visits the site).
+Because downloading something without seeing first is a hazard, there is no way around.
+
+BRAINSTORMING:
+a) To have a dedicated page for each model, that when visiting that URL allows to download the model and then prompting the user to view it int it's space.
+  ✔️ It can improve user experience by adding general tips to help new users use this feature.
+  ❌ It will be needed to code an extra page for each model.
+      💡 Since 3D assets are not embedded on each page, it's possible to resolve this with a dynamic page wich loads the model's id);
+b) A QR code to the same page, maybe with the #id of the 3D model.
+  ✔️ Easy to implement. No extra development needed.️
+  ❌ It's not straight-foward, or at least in the best case, users needs to figure it out and look for the Ar button.
+      💡 A script could be set on place, to trigger some CTA to prompt users to use the AR button whenever someone enters the site through that particular url. 
